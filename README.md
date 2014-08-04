@@ -8,4 +8,4 @@ Uses [Text Analysis by AlchemyAPI](http://www.alchemyapi.com/)
 Requirements
 ------------
 * Your own AlchemyAPI key
-* The AlchemyAPI python SDK from @AlchemyAPI/alchemyapi_python
+* The AlchemyAPI python SDK from https://github.com/AlchemyAPI/alchemyapi_python
