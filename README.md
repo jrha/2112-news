@@ -5,6 +5,8 @@ Select Rush songs to reflect the day's news.
 
 Uses [Text Analysis by AlchemyAPI](http://www.alchemyapi.com/)
 
+Run as a cron job at 21:12 every day for extra awesomeness!
+
 Requirements
 ------------
 * Your own AlchemyAPI key
