@@ -28,7 +28,7 @@ for t in d['entries']:
     if 'VIDEO:' not in title and 'AUDIO:' not in title:
         response = alchemyapi.keywords('url', url)
 
-        if response['status'] != 'ERROR':
+        if response['status'] == 'OK':
             for w in response['keywords']:
 
                 w = w['text']
