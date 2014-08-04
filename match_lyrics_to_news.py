@@ -1,7 +1,7 @@
 from alchemyapi.alchemyapi import AlchemyAPI
 from json import load, dumps
 from collections import Counter
-from sys import stdout
+from sys import stdout, exit
 import feedparser
 
 RSS_URL = 'http://feeds.bbci.co.uk/news/technology/rss.xml'
@@ -37,7 +37,7 @@ for t in d['entries']:
                         songs[s] += 1
         else:
             print "\n%s: %s" % (response['status'], response['statusInfo'])
-            break
+            exit(1)
 
     stdout.write('\b'*4 + '%3d%%' % ((i / count) * 100))
     stdout.flush()
